@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/power-day/static/css/main.f4ea4c33.chunk.css",
+    "main.js": "/power-day/static/js/main.9529d6e2.chunk.js",
+    "main.js.map": "/power-day/static/js/main.9529d6e2.chunk.js.map",
+    "runtime-main.js": "/power-day/static/js/runtime-main.e5764764.js",
+    "runtime-main.js.map": "/power-day/static/js/runtime-main.e5764764.js.map",
+    "static/js/2.6068bbe1.chunk.js": "/power-day/static/js/2.6068bbe1.chunk.js",
+    "static/js/2.6068bbe1.chunk.js.map": "/power-day/static/js/2.6068bbe1.chunk.js.map",
+    "index.html": "/power-day/index.html",
+    "static/css/main.f4ea4c33.chunk.css.map": "/power-day/static/css/main.f4ea4c33.chunk.css.map",
+    "static/js/2.6068bbe1.chunk.js.LICENSE.txt": "/power-day/static/js/2.6068bbe1.chunk.js.LICENSE.txt",
+    "static/media/logo.a708981a.png": "/power-day/static/media/logo.a708981a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5764764.js",
+    "static/js/2.6068bbe1.chunk.js",
+    "static/css/main.f4ea4c33.chunk.css",
+    "static/js/main.9529d6e2.chunk.js"
+  ]
+}
