@@ -1,0 +1,27 @@
+[
+	{
+		"title": "Stretching",
+		"body": "On the bed, as the muscles are still warm.",
+		"img": "img/stretching.png"
+	},
+	{
+		"title": "Hot water",
+		"body": "Hydrate and reactivate the blood circulation.",
+		"img": "img/hotwater.png"
+	},
+	{
+		"title": "Jogging",
+		"body": "Oxygene the brain, train the heart, build strong bones, strengthen muscles.",
+		"img": "img/jogging.png"
+	},
+	{
+		"title": "Power Drink",
+		"body": "Great breverage to strength your immune system:\n Ginger powder, Turmeric, Cinnamon, Fenugreek, Cayenne pepper, Raw honey, Warm water.",
+		"img": "img/powerdrink.png"
+	},
+	{
+		"title": "Supplementary vitamins",
+		"body": "Vitamin D for bone health and immunity.",
+		"img": "img/vitamins.png"
+	}
+]
