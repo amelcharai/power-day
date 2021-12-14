@@ -12,6 +12,7 @@ const CardList = ({ ingredient }) => {
               img={ingredient[i].img}
               title={ingredient[i].title}
               body={ingredient[i].body}
+              video={ingredient[i].video}
               />
           )
         })

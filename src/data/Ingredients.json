@@ -10,6 +10,12 @@
 		"img": "img/hotwater.png"
 	},
 	{
+		"title": "Radio Taiso",
+		"body": "Calisthenics to improve posture, strength and body composition.",
+		"img": "img/radiotaiso.png",
+		"video": "https://www.youtube.com/embed/kM14RLTKN30"
+	},
+	{
 		"title": "Jogging",
 		"body": "Oxygene the brain, train the heart, build strong bones, strengthen muscles.",
 		"img": "img/jogging.png"
