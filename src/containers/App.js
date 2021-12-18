@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <a className="App-reference" href='https://pngtree.com/so/Hand'>Hand png from pngtree.com/</a>
+          <a className="App-reference" href='https://pngtree.com/so/Hand' target="_blank">Hand png from pngtree.com/</a>
           <h1>Power Day</h1>
         </header>
         <Scroll>
