@@ -29,5 +29,15 @@
 		"title": "Supplementary vitamins",
 		"body": "Vitamin D for bone health and immunity.",
 		"img": "img/vitamins.png"
+	},
+	{
+		"title": "Muscle/Joint relief",
+		"body": "Combine the following oils with a carrier oil and perform a self-massage: Lavender, Wintergreen, Lemon Eucalyptus.",
+		"img": "img/oil.png"
+	},
+	{
+		"title": "Mouthwash",
+		"body": "Combine the following oils with alcohol, baking soda and distilled water: Clove, Tea Tree, Perppermint. Diluate with water before use.",
+		"img": "img/oil.png"
 	}
 ]
