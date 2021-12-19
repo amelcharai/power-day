@@ -1,26 +1,38 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import logo from '../logo.png'
 import './App.css'
-import Scroll from '../components/Scroll'
 import CardList from '../components/CardList'
-import Ingredients from '../data/Ingredients.json'
+import Recipes from '../data/Recipes.json'
+import SearchBox from '../components/SearchBox'
 
-class App extends Component {
+const pngtreeRef = <a className="App-link" href='https://www.pngtree.com/' target="_blank" rel="noreferrer">pngtree.com</a>
+const subpngRef = <a className="App-link" href='https://www.subpng.com/' target="_blank" rel="noreferrer">subpng.com</a>
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <a className="App-reference" href='https://pngtree.com/so/Hand' target="_blank">Hand png from pngtree.com/</a>
-          <h1>Power Day</h1>
-        </header>
-        <Scroll>
-          <CardList ingredient={Ingredients} />
-        </Scroll>
-      </div>
-    )
+const App = () => {
+  const [searchfield, setSearchfield] = useState('')
+
+  const onSearchChange = (event) => {
+    setSearchfield(event.target.value)
   }
+
+  const filteredRecipes = Recipes.filter(recipe => {
+    const recipeContent = recipe.title+recipe.body
+    return recipeContent.toLowerCase().includes(searchfield.toLowerCase())
+  })
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Power Day</h1>
+      </header>
+      <SearchBox searchChange={onSearchChange}/>
+      <CardList recipe={filteredRecipes} />
+      <footer>
+        <p className='App-footer'>Image credits to {pngtreeRef} and {subpngRef}</p>
+      </footer>
+    </div>
+  )
 }
 
 export default App

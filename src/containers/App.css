@@ -21,6 +21,8 @@
   color: #ffb7c5;
 }
 
-.App-reference {
-  font-size: calc(1vmin);
+.App-footer {
+  height: 5vmin;
+  color: #ffb7c5;
+  font-size: calc(2vmin);
 }

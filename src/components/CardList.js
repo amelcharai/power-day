@@ -1,18 +1,18 @@
 import React from 'react'
 import Card from './Card'
 
-const CardList = ({ ingredient }) => {
+const CardList = ({ recipe }) => {
   return (
     <div>
       {
-        ingredient.map((_user, i) => {
+        recipe.map((_user, i) => {
           return (
             <Card
               key={i}
-              img={ingredient[i].img}
-              title={ingredient[i].title}
-              body={ingredient[i].body}
-              video={ingredient[i].video}
+              img={recipe[i].img}
+              title={recipe[i].title}
+              body={recipe[i].body}
+              video={recipe[i].video}
               />
           )
         })
