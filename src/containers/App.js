@@ -23,8 +23,8 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Power Day</h1>
+        <img src={logo} className="App-logo" alt="logo" id="logo-image"/>
+        <h1 id="header">Power Day</h1>
       </header>
       <SearchBox searchChange={onSearchChange}/>
       <CardList recipe={filteredRecipes} />

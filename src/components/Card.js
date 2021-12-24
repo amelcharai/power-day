@@ -8,7 +8,7 @@ const Card = ({ title, body, img, video }) => {
     <div className='tc mw6 grow bg-light-pink br3 pa3 ma2 dib bw2 shadow-5'>
       <div>
         <img className='Card-img' src={`${process.env.PUBLIC_URL}/${img}`} alt={title}/>
-        <h2>{title}</h2>
+        <h2 id={`header-${title.toLowerCase().replace(/\s/g, "")}`}>{title}</h2>
         {bodyComponent}
         {videoComponent}
       </div>
