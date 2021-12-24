@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/power-day/static/css/main.c18f2bdc.chunk.css",
-    "main.js": "/power-day/static/js/main.839231ed.chunk.js",
-    "main.js.map": "/power-day/static/js/main.839231ed.chunk.js.map",
+    "main.js": "/power-day/static/js/main.2e4b476d.chunk.js",
+    "main.js.map": "/power-day/static/js/main.2e4b476d.chunk.js.map",
     "runtime-main.js": "/power-day/static/js/runtime-main.e5764764.js",
     "runtime-main.js.map": "/power-day/static/js/runtime-main.e5764764.js.map",
     "static/css/2.6d7c7915.chunk.css": "/power-day/static/css/2.6d7c7915.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.6d7c7915.chunk.css",
     "static/js/2.8ff5c84a.chunk.js",
     "static/css/main.c18f2bdc.chunk.css",
-    "static/js/main.839231ed.chunk.js"
+    "static/js/main.2e4b476d.chunk.js"
   ]
 }
