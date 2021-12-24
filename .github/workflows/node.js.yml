@@ -12,6 +12,9 @@ on:
 jobs:
   build:
 
+    env:
+      NODE_ENV: github
+
     runs-on: ubuntu-latest
 
     strategy:

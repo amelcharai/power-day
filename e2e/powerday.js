@@ -1,7 +1,10 @@
 import { Selector } from 'testcafe'
+import { getBaseUrl } from './baseUrl'
+
+const pageUrl = `${getBaseUrl()}/power-day`
 
 fixture `Getting Started`
-    .page `http://localhost:3000/power-day`
+  .page(pageUrl)
 
 test('Page header', async t => {
   await t
