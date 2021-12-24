@@ -33,4 +33,4 @@ jobs:
     - run: npm run build --if-present
     - uses: DevExpress/testcafe-action@latest
       with:
-        args: "firefox test"
+        args: "firefox e2e"
