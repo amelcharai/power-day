@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 jobs:
-  windows:
+  windows-chrome:
     env:
       NODE_ENV: github
     runs-on: windows-latest
@@ -30,6 +30,23 @@ jobs:
     - uses: DevExpress/testcafe-action@latest
       with:
         args: "chrome e2e"
+  windows-edge:
+    env:
+      NODE_ENV: github
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
     - uses: DevExpress/testcafe-action@latest
       with:
         args: "edge e2e"
@@ -53,3 +70,23 @@ jobs:
     - uses: DevExpress/testcafe-action@latest
       with:
         args: "firefox e2e"
+  macos-safari:
+    env:
+      NODE_ENV: github
+    runs-on: macos-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "safari e2e"
