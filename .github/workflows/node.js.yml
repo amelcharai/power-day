@@ -73,7 +73,7 @@ jobs:
   macos-safari:
     env:
       NODE_ENV: github
-    runs-on: macos-latest
+    runs-on: macos-11
     strategy:
       fail-fast: false
       matrix:
