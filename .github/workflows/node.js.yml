@@ -10,18 +10,54 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  windows-chrome:
     env:
       NODE_ENV: github
-
-    runs-on: ubuntu-latest
-
+    runs-on: windows-latest
     strategy:
+      fail-fast: false
       matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "chrome e2e"
+  windows-edge:
+    env:
+      NODE_ENV: github
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "edge e2e"
+  ubuntu-firefox:
+    env:
+      NODE_ENV: github
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [16.x]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
