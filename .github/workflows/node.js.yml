@@ -30,3 +30,12 @@ jobs:
     - uses: DevExpress/testcafe-action@latest
       with:
         args: "firefox e2e"
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "chrome e2e"
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "safari e2e"
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "edge e2e"
