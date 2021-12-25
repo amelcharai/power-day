@@ -15,6 +15,7 @@ jobs:
       NODE_ENV: github
     runs-on: windows-latest
     strategy:
+      fail-fast: false
       matrix:
         node-version: [16.x]
     steps:
@@ -37,6 +38,7 @@ jobs:
       NODE_ENV: github
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         node-version: [16.x]
     steps:
