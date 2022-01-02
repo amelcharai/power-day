@@ -2,6 +2,7 @@ import { Selector } from 'testcafe'
 import { getBaseUrl } from './baseUrl'
 
 const pageUrl = `${getBaseUrl()}/power-day`
+console.log(pageUrl)
 
 fixture `Getting Started`
   .page(pageUrl)
