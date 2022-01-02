@@ -4,5 +4,5 @@ const baseUrl = {
 };
 
 export function getBaseUrl () {
-  return baseUrl[`${process.env.NODE_ENV}`] || baseUrl['local']
+  return baseUrl[`${process.env.APP_ENV}`] || baseUrl['local']
 }

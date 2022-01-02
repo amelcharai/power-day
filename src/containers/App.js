@@ -18,7 +18,7 @@ const App = () => {
   }
 
   useEffect( () => {
-    fetch(apiUri)
+    fetch(`${apiUri}/card`)
       .then(response => response.json())
       .then(cards => { setRecipes(cards) })
   },[])
