@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/power-day/static/css/main.68668c0d.css",
-    "main.js": "/power-day/static/js/main.a8fc44af.js",
+    "main.js": "/power-day/static/js/main.e797a9a8.js",
     "static/media/logo.png": "/power-day/static/media/logo.a708981a1ec537db9359.png",
     "index.html": "/power-day/index.html",
     "main.68668c0d.css.map": "/power-day/static/css/main.68668c0d.css.map",
-    "main.a8fc44af.js.map": "/power-day/static/js/main.a8fc44af.js.map"
+    "main.e797a9a8.js.map": "/power-day/static/js/main.e797a9a8.js.map"
   },
   "entrypoints": [
     "static/css/main.68668c0d.css",
-    "static/js/main.a8fc44af.js"
+    "static/js/main.e797a9a8.js"
   ]
 }
