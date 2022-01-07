@@ -13,6 +13,7 @@ jobs:
   windows-chrome:
     env:
       NODE_ENV: github
+      REACT_APP_API_ENV: production
     runs-on: windows-latest
     strategy:
       fail-fast: false
@@ -33,6 +34,7 @@ jobs:
   windows-edge:
     env:
       NODE_ENV: github
+      REACT_APP_API_ENV: production
     runs-on: windows-latest
     strategy:
       fail-fast: false
@@ -53,6 +55,7 @@ jobs:
   ubuntu-firefox:
     env:
       NODE_ENV: github
+      REACT_APP_API_ENV: production
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
